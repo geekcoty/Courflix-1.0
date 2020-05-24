@@ -30,6 +30,9 @@ body {
   padding: 1.6rem;
   background-color: black;
   opacity: 55%;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 .header-wrapper .header .home-link .courflix-logo {
   display: inline-block;
@@ -75,6 +78,9 @@ body {
   margin-left: 2rem;
   color: white;
   size: 1rem;
+}
+.main .series-wrapper {
+  margin-bottom: 1.5rem;
 }
 .main .series-wrapper .series-title {
   margin-bottom: 0.5rem;
