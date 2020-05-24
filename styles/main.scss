@@ -11,10 +11,14 @@ $headerWidth:100vw;
     box-sizing: border-box;
     margin: 0;
     }
+    ::-webkit-scrollbar {
+        display: none;
+    }
 
 body{
     background-color: black;
     color: $fontColor;
+    overflow-x: hidden;
 }
 .header-wrapper{
     background-image: url(../assets/vmars.jpg);
@@ -84,21 +88,43 @@ body{
 .main{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    margin-left: 2rem;
     color: $fontColor;
     size: $fontSize;
-    .milista-title{
-        margin: 1rem;
-        .milista{
+    .series-wrapper{
+        .series-title{
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+        }
+        .series{
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
             .serie{
-                display: inline-block;
-                overflow: hidden;
-                margin-right: 1rem;
-                width: 342px;
+                width: 341px;
                 height: 192px;
+                margin-right: 1rem;
+                scroll-snap-align:start;
             }
         }
-
     }
-    
+    .contenido-wrapper{
+        .contenido-title{
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+        }
+        .contenido{
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            .serie{
+                width: 341px;
+                height: 192px;
+                margin-right: 1rem;
+                scroll-snap-align:start;
+            }
+        }
+    }
 }

@@ -3,9 +3,14 @@
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 
 .header-wrapper {
@@ -67,19 +72,41 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  margin-left: 2rem;
   color: white;
   size: 1rem;
 }
-.main .milista-title {
-  margin: 1rem;
+.main .series-wrapper .series-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
 }
-.main .milista-title .milista .serie {
-  display: inline-block;
-  overflow: hidden;
-  margin-right: 1rem;
-  width: 342px;
+.main .series-wrapper .series {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.main .series-wrapper .series .serie {
+  width: 341px;
   height: 192px;
+  margin-right: 1rem;
+  scroll-snap-align: start;
+}
+.main .contenido-wrapper .contenido-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+}
+.main .contenido-wrapper .contenido {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.main .contenido-wrapper .contenido .serie {
+  width: 341px;
+  height: 192px;
+  margin-right: 1rem;
+  scroll-snap-align: start;
 }
 
 /*# sourceMappingURL=styles.css.map */
