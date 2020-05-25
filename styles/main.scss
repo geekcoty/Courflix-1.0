@@ -95,7 +95,7 @@ body{
     color: $fontColor;
     size: $fontSize;
     .series-wrapper{
-
+        margin-bottom: 100px;
         .series-title{
             margin-bottom: 0.5rem;
             font-size: 1.6rem;
@@ -128,7 +128,25 @@ body{
                 height: 192px;
                 margin-right: 1rem;
                 scroll-snap-align:start;
+                }
+            }    
+        }
+    }
+    .agregados-wrapper{
+        .agregados-title{
+            margin-bottom: 0.5rem;
+            font-size: 1.6rem;
+        }
+        .agregados{
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            .serie{
+                width: 341px;
+                height: 192px;
+                margin-right: 1rem;
+                scroll-snap-align:start;   
             }
         }
     }
-}
