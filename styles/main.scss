@@ -1,6 +1,6 @@
 $linkColor:red;
 $fontColor: white;
-$fontSize: 1.6rem;
+$fontSize: 2rem;
 
 $buttonColor:white;
 $headerHeight:42px;
@@ -21,6 +21,12 @@ body{
     color: $fontColor;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;;
+}
+
+a:link{
+    text-decoration: none;
+    font-size: $fontSize;
+
 }
 .header-wrapper{
     background-image: url(../assets/vmars.jpg);
@@ -65,7 +71,7 @@ body{
     margin-left: 2rem;
     width: 30rem;
     .original-courflix{
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding-bottom: 0.5rem;
   
     }
@@ -83,12 +89,14 @@ body{
         opacity: 80%;
     }
     .series-subtitle{
-        font-size: 1.5rem;
+        font-size: 2rem;
         padding-top: 1.5rem;
     }
     .series-synopsis{
         padding-top: 1.5rem;
         text-align: left;
+        font-size: 1.5rem;
+       
     }
     }
 .main{
@@ -96,10 +104,9 @@ body{
     flex-direction: column;
     margin-left: 2rem;
     color: $fontColor;
-    size: $fontSize;
+    font-size: $fontSize;
     .series-wrapper{
         .series-title{
-            font-size: 1.6rem;
             margin: 2.5rem 0 2.5rem 0;
         }
         .series{
@@ -118,7 +125,6 @@ body{
     .contenido-wrapper{
         .contenido-title{
             margin: 2.5rem 0 2.5rem 0;
-            font-size: 1.6rem;
         }
         .contenido{
             display: flex;
@@ -137,7 +143,7 @@ body{
     .agregados-wrapper{
         .agregados-title{
             margin: 2.5rem 0 2.5rem 0;
-            font-size: 1.6rem;
+
         }
         .agregados{
             display: flex;

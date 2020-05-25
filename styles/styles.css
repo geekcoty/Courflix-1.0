@@ -15,6 +15,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+a:link {
+  text-decoration: none;
+  font-size: 2rem;
+}
+
 .header-wrapper {
   background-image: url(../assets/vmars.jpg);
   background-position: center;
@@ -31,7 +36,7 @@ body {
   align-items: center;
   padding: 1.6rem;
   background-color: black;
-  font-size: 1.6rem;
+  font-size: 2rem;
   opacity: 55%;
   position: sticky;
   top: 0;
@@ -51,7 +56,7 @@ body {
   width: 30rem;
 }
 .header-text .original-courflix {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-bottom: 0.5rem;
 }
 .header-text .header-title {
@@ -67,12 +72,13 @@ body {
   opacity: 80%;
 }
 .header-text .series-subtitle {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-top: 1.5rem;
 }
 .header-text .series-synopsis {
   padding-top: 1.5rem;
   text-align: left;
+  font-size: 1.5rem;
 }
 
 .main {
@@ -80,10 +86,9 @@ body {
   flex-direction: column;
   margin-left: 2rem;
   color: white;
-  size: 1.6rem;
+  font-size: 2rem;
 }
 .main .series-wrapper .series-title {
-  font-size: 1.6rem;
   margin: 2.5rem 0 2.5rem 0;
 }
 .main .series-wrapper .series {
@@ -100,7 +105,6 @@ body {
 }
 .main .contenido-wrapper .contenido-title {
   margin: 2.5rem 0 2.5rem 0;
-  font-size: 1.6rem;
 }
 .main .contenido-wrapper .contenido {
   display: flex;
@@ -117,7 +121,6 @@ body {
 
 .agregados-wrapper .agregados-title {
   margin: 2.5rem 0 2.5rem 0;
-  font-size: 1.6rem;
 }
 .agregados-wrapper .agregados {
   display: flex;
