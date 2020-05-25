@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 *, *:after, *:before {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +12,7 @@ body {
   background-color: black;
   color: white;
   overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
 }
 
 .header-wrapper {
@@ -29,6 +31,7 @@ body {
   align-items: center;
   padding: 1.6rem;
   background-color: black;
+  font-size: 1.6rem;
   opacity: 55%;
   position: sticky;
   top: 0;
@@ -51,9 +54,9 @@ body {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
 }
-.header-text .series-title {
+.header-text .header-title {
   padding-bottom: 1.5rem;
-  font-size: 5.5rem;
+  font-size: 5rem;
   text-align: left;
 }
 .header-text .series-button {
@@ -77,14 +80,11 @@ body {
   flex-direction: column;
   margin-left: 2rem;
   color: white;
-  size: 1rem;
-}
-.main .series-wrapper {
-  margin-bottom: 100px;
+  size: 1.6rem;
 }
 .main .series-wrapper .series-title {
-  margin-bottom: 0.5rem;
   font-size: 1.6rem;
+  margin: 2.5rem 0 2.5rem 0;
 }
 .main .series-wrapper .series {
   display: flex;
@@ -99,7 +99,7 @@ body {
   scroll-snap-align: start;
 }
 .main .contenido-wrapper .contenido-title {
-  margin-bottom: 0.5rem;
+  margin: 2.5rem 0 2.5rem 0;
   font-size: 1.6rem;
 }
 .main .contenido-wrapper .contenido {
@@ -116,7 +116,7 @@ body {
 }
 
 .agregados-wrapper .agregados-title {
-  margin-bottom: 0.5rem;
+  margin: 2.5rem 0 2.5rem 0;
   font-size: 1.6rem;
 }
 .agregados-wrapper .agregados {
