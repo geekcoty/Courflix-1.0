@@ -13,17 +13,15 @@ body {
   color: white;
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
 }
 
 a:link {
   text-decoration: none;
-  font-size: 1.5rem;
-  color: white;
+  font-size: 2rem;
 }
 
 .header-wrapper {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/bbheader.png);
+  background-image: background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.0001) 0%, #000000 100%), url(../assets/portada.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,7 +36,7 @@ a:link {
   align-items: center;
   padding: 1.6rem;
   background-color: black;
-  font-size: 1.5rem;
+  font-size: 2rem;
   opacity: 55%;
   position: sticky;
   top: 0;
@@ -53,60 +51,25 @@ a:link {
 }
 
 .header-text {
-  margin-top: 3.5rem;
+  margin-top: 6rem;
   margin-left: 2rem;
   width: 30rem;
 }
-.header-text .bb-logo {
-  display: inline-block;
+.header-text .original-courflix {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
 }
-.header-text .series-details {
-  margin-right: 2rem;
-  padding-bottom: 2rem;
-}
-.header-text .series-details .percentage {
-  color: green;
-  padding: 0.3rem;
-  font-weight: 800;
-}
-.header-text .series-details .year {
-  padding: 0.3rem;
-}
-.header-text .series-details .classif {
-  padding: 0.3rem;
-  border: 1px solid white;
-  border-radius: 10px;
-}
-.header-text .series-details .temporadas {
-  padding: 0.3rem;
-  font-weight: 800;
-}
-.header-text .series-button1 {
-  margin-right: 1.5rem;
-  margin-bottom: 1.5rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-  background-color: red;
-  opacity: 80%;
+.header-text .header-title {
+  padding-bottom: 1.5rem;
+  font-size: 5rem;
+  text-align: left;
 }
 .header-text .series-button {
   margin-right: 1.5rem;
-  margin-bottom: 1.5rem;
   padding: 0.5rem;
   border-radius: 10px;
-  background-color: gray;
+  background-color: white;
   opacity: 80%;
-}
-.header-text .thumbs {
-  box-sizing: border-box;
-  position: relative;
-  top: 20px;
-}
-.header-text .thumbs2 {
-  box-sizing: border-box;
-  transform: rotate(-180deg);
-  position: relative;
-  top: 20px;
 }
 .header-text .series-subtitle {
   font-size: 2rem;
@@ -123,7 +86,7 @@ a:link {
   flex-direction: column;
   margin-left: 2rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .main .series-wrapper .series-title {
   margin: 2.5rem 0 2.5rem 0;
@@ -140,5 +103,36 @@ a:link {
   margin-right: 1rem;
   scroll-snap-align: start;
 }
+.main .contenido-wrapper .contenido-title {
+  margin: 2.5rem 0 2.5rem 0;
+}
+.main .contenido-wrapper .contenido {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.main .contenido-wrapper .contenido .serie {
+  width: 341px;
+  height: 192px;
+  margin-right: 1rem;
+  scroll-snap-align: start;
+}
 
-/*# sourceMappingURL=details_styles.css.map */
+.agregados-wrapper .agregados-title {
+  margin: 2.5rem 0 2.5rem 0;
+}
+.agregados-wrapper .agregados {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.agregados-wrapper .agregados .serie {
+  width: 341px;
+  height: 192px;
+  margin-right: 1rem;
+  scroll-snap-align: start;
+}
+
+/*# sourceMappingURL=styles.css.map */
