@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="styles/styles.css">
         <link rel="stylesheet" href="styles/reset.css">
         <title>Courflix </title>
@@ -12,8 +13,15 @@
     <div class="header-wrapper">
     <header class="header">
         <a href="index.html" class="home-link">
-        <img src="assets/courflix_title.png" class="courflix-logo" alt="logo de courflix">
+        <img src="assets/courflix_title.png" class="courflix-logo" id="logoCourflix" alt="logo de courflix">
         </a>
+        <nav class="navbar-mobile" id="mobileMenu">
+            <a href="index.html" class="nav-link"> Inicio</a>
+            <a href="#series" class="nav-link"> Series</a>
+            <a href="#" class="nav-link"> Peliculas</a>
+            <a href="#agregados" class="nav-link"> Agregados recientemente </a>
+            <a href="#seguir"  class="nav-link"> Mi Lista </a>
+    </nav>
         <nav class="navbar">
            <a href="#series" class="nav-link"> Series</a>
             <a href="#" class="nav-link"> Peliculas</a>
@@ -24,7 +32,7 @@
     <div class="hero-section">
         <h3 class="original-title"> Original de CourFlix</h3>
         <h1 class="hero-title">BLACK SUMMER</h1>
-        <a href="detallesb.html" class="series-button playButton">Reproducir</a>
+        <a href="detallesb.html" class="series-button1 playButton">Reproducir</a>
         <a href="#series" class="series-button">+ mi lista</a>
         <h3 class="hero-subtitle"> Ve la temporada 1</h3>
         <p class="hero-series">
@@ -106,5 +114,6 @@
             </a> 
         </div>   
     </div>
+<script src="js/main.js"> </script>
     </body>
     </html>
