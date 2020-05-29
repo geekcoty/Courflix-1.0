@@ -49,10 +49,15 @@ a:link {
     position: fixed;
   }
 }
+
+
 .header-wrapper .header .home-link .courflix-logo {
   margin-right: 2rem;
 }
-
+@media (max-width: 320px){
+.header-wrapper .header .menu{
+margin-right: 1rem;
+}
 @media (max-width: 320px){
   .header-wrapper .header .home-link .courflix-logo{
     display: inline-block;
@@ -65,14 +70,12 @@ a:link {
 }
 @media (max-width: 320px){
   .header-wrapper .header .navbar-mobile{
-    width: 235px;
-    height: 100%;
+    width: 200px;
+    height: 100vh;
     background-color: black;
-    z-index: 1;
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 100%;
     left: 0;
-    overflow: auto;
   }
 }
 @media (max-width: 320px){
