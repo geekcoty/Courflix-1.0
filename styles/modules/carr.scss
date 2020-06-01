@@ -1,0 +1,26 @@
+$fontColor: white;
+$playButtonColor: #ED0A1D;
+$buttonColor:rgba(157, 151, 151, 0.5415);
+$mobileBreakpoint: 320px;
+
+
+.section-title{
+    font-weight: bold;
+    margin: 2.5rem 0 2.5rem 2rem;
+    font-size: 1.5rem;
+    @media (max-width: $mobileBreakpoint){
+        font-size: 1.1rem;
+    }
+}
+.series-wrapper{
+        display: flex;
+        margin-left: 2rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+
+        .serie{   
+            margin-right: 1rem;
+            scroll-snap-align: start;
+            }
+
+        }   

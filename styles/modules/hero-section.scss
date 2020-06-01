@@ -1,0 +1,118 @@
+$fontColor: white;
+$playButtonColor: #ED0A1D;
+$buttonColor:rgba(157, 151, 151, 0.5415);
+$mobileBreakpoint: 320px;
+
+.hero-section{
+            width: 55vw;
+            text-align: left;
+
+    .hero-original-title{
+            margin-left: 2rem;
+            padding-top: 12.5rem;
+            padding-bottom: 0.5rem;
+            font-size: 1.6rem;
+            font-weight: bold;
+            line-height: 2rem;
+
+        @media (max-width: $mobileBreakpoint) {
+                display: none;
+            }
+    }
+    .hero-title{
+            font-size: 7.5rem;
+            font-weight: bold;
+            line-height: 6rem;
+            margin-left: 2rem;
+
+        @media (max-width: $mobileBreakpoint){
+                font-size: 1rem;
+                line-height: 1.5rem;
+                margin-top: 5.5rem;
+                margin-left: 1.5rem;
+            }
+        }
+    }
+    .hero-details{
+        display: none;
+        @media (max-width: $mobileBreakpoint) {
+            display: block;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-left: 1.5rem;
+        }
+    }
+    .hero-section-buttons{ 
+        margin-top: 1.6rem;
+        margin-bottom: 1.6rem;
+        display: flex;
+
+        @media (max-width:$mobileBreakpoint){
+            flex-direction: column;
+        }
+
+        .series-button{
+            border-radius: 9px;
+            margin-left: 2rem;
+            margin-right: 0.5rem;
+            padding: 1.5rem;
+            background-color: $buttonColor;
+            font-size: 1.2rem;
+            align-items: center;
+            justify-content: center;
+
+        @media (max-width:$mobileBreakpoint){
+            background-color: #ED0A1D;
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            padding:0.75rem;
+
+
+        }
+        }
+        .series-button1{
+            border-radius: 9px;
+            margin-left: 2rem;
+            margin-right: 0.5rem;
+            padding: 1.5rem;
+            background-color: $buttonColor;
+            font-size: 1.2rem;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width:$mobileBreakpoint){
+                margin-left: 1rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                padding:0.75rem;
+            }
+        }
+
+        .playButton{
+            background-color: #ED0A1D;
+        }  
+    }
+    .hero-subtitle{
+            margin-left: 2rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 2rem;
+
+            @media (max-width:$mobileBreakpoint) {
+                display: none;
+                    
+            }
+    }
+    .hero-description{
+            margin-left: 2rem;
+            margin-top: 0.5rem;
+            font-size: 2.5rem;
+
+            @media (max-width:$mobileBreakpoint) {
+                display: none;
+                
+            }
+        }

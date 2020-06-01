@@ -1,145 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import "modules/header";
+
+@import "modules/hero-section";
+
+@import "modules/carr";
+
+//@import "modules/header-bb.scss";//
+
+@import "modules/hero-sectionbb.scss";
+
+@import "modules/carr-bb.scss";
+
 $fontColor: white;
 $playButtonColor: #ED0A1D;
 $buttonColor:rgba(157, 151, 151, 0.5415);
+$mobileBreakpoint: 320px;
+
 
 *, *:after, *:before {
     box-sizing: border-box;
     margin: 0;
     }
-::-webkit-scrollbar {
+
+    ::-webkit-scrollbar {
         display: none;
         }
 body{
-    color: $fontColor;
     background-color: black;
-}
-a:link{
+    color: $fontColor;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+.link{
+    text-decoration: none;
+    color: $fontColor;
+    &:active{
         text-decoration: none;
-        color: $fontColor;
     }
-
-.header-wrapper{
-    background-image: url(../assets/bbheader.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: .5rem;
-    width:  100vw;
-    height: 54.8rem;
-.header{
-    display: flex;
-    align-items: center;
-    padding-left: 2rem;
-    padding-top: 0.3rem;
-    justify-content: left;
-    font-weight: bold;
-    position: fixed;
-    top: 0;  
-    width: 100%;
-    background-color:rgba(0, 0, 0, 0.801218);
-
-    .home-link{
-        .courflix-logo{
-        margin-right: 2rem;
-    }
-    }
-.navbar{
-    .nav-link{
-    margin-right: 2rem;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    }
+    &:visited{
+        color: white;
+        text-decoration: none;
     }
 }
-}
-.background-rectangle{ 
-    background: rgb(0,0,0);
-    background: linear-gradient(270deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-    width: 92.56rem;
-    height: 56.18rem;
-    .hero-section{
-    width: 65vw;
-    text-align: left;
-
-    .logo-bb{
-        display: inline-block;
-        margin-top: 5rem;
-        margin-left: 2rem;
-        width: 345px;
-        height: 345px;
-    }
-    .series-button{
-        display: inline-flex;
-        border-radius: 9px;
-        margin-left: 2rem;
-        margin-right: 0.5rem;
-        margin-top: 0.5rem;
-        width: 12.37rem;
-        height:4.06rem;
-        background-color: $buttonColor;
-        font-size: 1.2rem;
-        align-items: center;
-        justify-content: center;
-    }
-    .play-button{
-        background-color: $playButtonColor;
-    }
-    .hero-subtitle{
-        margin-left: 2rem;
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
-        font-size: 1.1rem;
-        font-weight: bold;
-        line-height: 2rem;
-        .percentage{
-            color: forestgreen;
-            margin-right: 0.5rem;
-        }
-        .year{
-            margin-right: 0.5rem;
-        }
-        .rating{
-            border: 1px solid #979797;
-            border-radius: 8px;
-            box-sizing: border-box;
-            margin-right: 0.5rem;
-
-        }
-
-    }
-    .thumbs-up{
-        box-sizing: border-box;
-        position: relative;
-        top: 1.37rem;
-    }
-    .thumbs-down{
-        box-sizing: border-box;
-        position: relative;
-        transform: rotate(-180deg);
-        top: 1.37rem;
-
-    }
-
-    .hero-series{
-        width: 41rem;
-        margin-left: 2rem;
-        font-size: 1.5rem;
-        line-height: 2.7rem;
-    }
-}
-}
-.section-title{
-    font-weight: bold;
-    margin: 2.5rem 0 2.5rem 2rem;
-    font-size: 1.5rem;
-}
-.series-wrapper{
-        display: flex;
-        margin-left: 2rem;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        .serie{   
-            margin-right: 1rem;
-            scroll-snap-align: start;
-            }
-    }

@@ -1,0 +1,133 @@
+$fontColor: white;
+$playButtonColor: #ED0A1D;
+$buttonColor:rgba(157, 151, 151, 0.5415);
+$mobileBreakpoint: 320px;
+
+.background-rectangle {
+    background: black;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, black 100%);
+    width: 75vw;
+    height: 56.18rem;
+    .hero-section {
+    width: 65vw;
+    text-align: left;
+        .logo-bb {
+            display: inline-block;
+            margin-top: 5rem;
+            margin-left: 2rem;
+            width: 345px;
+            height: 345px;
+
+            @media (max-width: $mobileBreakpoint) {
+            display: none;
+            }
+         }
+         .hero-details{
+             margin-left: 2rem;
+             margin-top: -2.5rem;
+             font-weight: bold;
+             @media (max-width: $mobileBreakpoint) {
+                display: block;
+                font-size: 0.8rem;
+                font-weight: bold;
+                margin-left: 1.5rem;
+            }
+             .percentage{
+                color: forestgreen;
+                margin-right: 0.5rem;
+                @media ($mobileBreakpoint){
+                    display: none;
+                }  
+             }
+             .year{
+                margin-right: 0.5rem; 
+
+             }
+             .rating{
+                border: 1px solid #979797;
+                border-radius: 8px;
+                box-sizing: border-box;
+                padding: 0.2rem;
+                margin-right: 0.5rem;
+             }
+         }
+         .hero-section-buttons{
+            margin-top: 1.6rem;
+            margin-bottom: 1.6rem;
+            display: flex;
+        
+            @media (max-width:$mobileBreakpoint){
+                flex-direction: column;
+            }
+            .series-button{
+                border-radius: 9px;
+                margin-left: 2rem;
+                margin-right: 0.5rem;
+                padding: 1.5rem;
+                background-color: $buttonColor;
+                font-size: 1.2rem;
+                align-items: center;
+                justify-content: center;
+        
+            @media (max-width:$mobileBreakpoint){
+                background-color: #ED0A1D;
+                margin-left: 1rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                padding:0.75rem;
+            }
+            }
+            .series-button1{
+                border-radius: 9px;
+                margin-left: 2rem;
+                margin-right: 0.5rem;
+                padding: 1.5rem;
+                background-color: $buttonColor;
+                font-size: 1.2rem;
+                align-items: center;
+                justify-content: center;
+        
+            @media (max-width:$mobileBreakpoint){
+                background-color: #ED0A1D;
+                margin-left: 1rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
+                padding:0.75rem;
+            }
+            }
+            .playButton{
+                background-color: #ED0A1D;
+            }
+            }
+        }
+        .thumbs-up{
+        box-sizing: border-box;
+        position: relative;
+        top: 0;
+        margin-right: 0.3rem;
+        @media ($mobileBreakpoint){
+            display: none;
+        }
+        }
+        .thumbs-down{
+        box-sizing: border-box;
+        position: relative;
+        transform: rotate(-180deg);
+        top: 0; 
+        @media ($mobileBreakpoint){
+            display: none;
+        }   
+        }
+    .hero-description{
+            width: 41rem;
+            padding-top: 3.5rem;
+            margin-left: 2rem;
+            font-size: 2.1rem;
+            line-height: 2.7rem;
+            @media ($mobileBreakpoint){
+                display: none;
+            }  
+        }
+}
+
+

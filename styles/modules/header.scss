@@ -1,0 +1,83 @@
+$fontColor: white;
+$playButtonColor: #ED0A1D;
+$buttonColor:rgba(157, 151, 151, 0.5415);
+$mobileBreakpoint: 320px;
+$tabletBreakpoin: 768px;
+
+.header-wrapper{
+    background-image: url(../assets/portada.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 54.8rem;
+
+    @media (max-width: $mobileBreakpoint) {
+        height: 45vh;
+        }
+
+.header{
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+    justify-content: left;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.801218);
+    @media (max-width: $mobileBreakpoint){
+        padding-left: 1rem;
+    }
+    .menu{
+        display: none;        
+        @media (max-width: $mobileBreakpoint){
+        margin-right: 0.5rem;
+        display: block;
+        }
+    }
+    .link{
+        .courflix-logo{
+        margin-right: 2rem;
+
+        @media (max-width: $mobileBreakpoint){
+        display: inline-block;
+        width: 8.15rem;
+        height: 2.18rem;
+        }
+    }
+    }
+.navbar-mobile{
+    display: none;
+
+    @media (max-width: $mobileBreakpoint){
+            width: 200px;
+            height: 100vh;
+            background-color: black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+        }
+    }
+    .nav.link{
+    @media (max-width: $mobileBreakpoint){
+        text-align: left;
+        display: block;
+        padding: 1rem;
+        font-size: 1.12rem;
+        font-weight: normal;
+        }
+    }
+}
+.navbar{
+
+    @media (max-width: $mobileBreakpoint){
+            display: none;
+        }
+    .nav{
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    }
+    }
+}

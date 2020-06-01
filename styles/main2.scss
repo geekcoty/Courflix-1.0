@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import "modules/header-bb.scss";
+
+@import "modules/hero-sectionbb.scss";
+
+@import "modules/carr-bb.scss";
+
+$fontColor: white;
+$playButtonColor: #ED0A1D;
+$buttonColor:rgba(157, 151, 151, 0.5415);
+$mobileBreakpoint: 320px;
+$tabletBreakpoin: 768px;
+
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+        }
+
+
+        *, *:after, *:before {
+            box-sizing: border-box;
+            margin: 0;
+            }
+        
+            ::-webkit-scrollbar {
+                display: none;
+                }
+        body{
+            background-color: black;
+            color: $fontColor;
+            font-family: 'Open Sans', sans-serif;
+            }
+        
+        .link{
+            text-decoration: none;
+            color: $fontColor;
+            &:active{
+                text-decoration: none;
+            }
+            &:visited{
+                color: white;
+                text-decoration: none;
+            }
+        }
+        
+
+
+
+
+
+
+
+
+
+        
