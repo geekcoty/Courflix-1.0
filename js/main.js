@@ -1,21 +1,18 @@
-$('.responsive').slick({
-    dots:false,
-    infinite: false,
+$('.series-wrapper').slick({
+    dots: false,
+    infinite: true,
+    arrows:false,
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 4,
     responsive: [
         {
-        breakpoint: 1024,
-        settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-        }
-        },
-        {
         breakpoint: 320,
+        settings: "unslick"
+        }
+        ,
+        {
+        breakpoint: 600,
         settings: {
             slidesToShow: 2,
             slidesToScroll: 2
@@ -35,18 +32,19 @@ $('.responsive').slick({
     });
 
 
-//const mobile = document.getElementById("mobileMenu");
+    const modal = document.getElementById("mobileMenu");
 
-//const logo = document.getElementById("menuHamburger");
-
-//logo.onclick = function () {
-//mobile.style.display = "block";
-//};
-
-//logo.onclick = function () {
-        //    if (mobile.style.display === "block") {
-        //   mobile.style.display = "none";
-        //  } else {
-        //      mobile.style.display = "block";
-        //    }
-//    };
+    const btn = document.getElementById("menuHamburger");
+    
+    btn.onclick = function () {
+    modal.style.display = "block";
+    };
+    
+    btn.onclick = function () {
+    if (modal.style.display === "block") {
+        modal.style.display = "none";
+    } else {
+        modal.style.display = "block";
+    }
+    };
+    
