@@ -68,6 +68,16 @@
 }
 
 @media (max-width: 320px) {
+  .nav.link {
+    text-align: left;
+    display: block;
+    padding: 1rem;
+    font-size: 1.12rem;
+    font-weight: normal;
+  }
+}
+
+@media (max-width: 320px) {
   .navbar {
     display: none;
   }
@@ -88,6 +98,18 @@
   width: 65vw;
   text-align: left;
 }
+.background-rectangle .hero-section .hero-title {
+  display: none;
+}
+@media (max-width: 320px) {
+  .background-rectangle .hero-section .hero-title {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    padding-top: 3.5rem;
+    margin-left: 1.5rem;
+    display: block;
+  }
+}
 .background-rectangle .hero-section .logo-bb {
   display: inline-block;
   margin-top: 5rem;
@@ -102,14 +124,15 @@
 }
 .background-rectangle .hero-section .hero-details {
   margin-left: 2rem;
-  margin-top: -2.5rem;
+  margin-top: 2.5rem;
   font-weight: bold;
 }
 @media (max-width: 320px) {
   .background-rectangle .hero-section .hero-details {
-    display: block;
     font-size: 0.8rem;
     font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     margin-left: 1.5rem;
   }
 }
@@ -117,7 +140,7 @@
   color: forestgreen;
   margin-right: 0.5rem;
 }
-@media (320px) {
+@media (max-width: 320px) {
   .background-rectangle .hero-section .hero-details .percentage {
     display: none;
   }
@@ -173,7 +196,6 @@
 }
 @media (max-width: 320px) {
   .background-rectangle .hero-section .hero-section-buttons .series-button1 {
-    background-color: #ED0A1D;
     margin-left: 1rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
@@ -189,7 +211,7 @@
   top: 0;
   margin-right: 0.3rem;
 }
-@media (320px) {
+@media (max-width: 320px) {
   .background-rectangle .thumbs-up {
     display: none;
   }
@@ -200,7 +222,7 @@
   transform: rotate(-180deg);
   top: 0;
 }
-@media (320px) {
+@media (max-width: 320px) {
   .background-rectangle .thumbs-down {
     display: none;
   }
@@ -212,7 +234,7 @@
   font-size: 2.1rem;
   line-height: 2.7rem;
 }
-@media (320px) {
+@media (max-width: 320px) {
   .background-rectangle .hero-description {
     display: none;
   }
@@ -223,16 +245,31 @@
   margin: 2.5rem 0 2.5rem 2rem;
   font-size: 1.5rem;
 }
-
-.series-wrapper {
-  display: flex;
-  margin-left: 2rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+@media (max-width: 320px) {
+  .section-title {
+    margin-leftt: 1rem;
+  }
 }
-.series-wrapper .serie {
+
+.detail-season .series-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+.detail-season .series-wrapper .episode {
+  display: flex;
   margin-right: 1rem;
-  scroll-snap-align: start;
+}
+.detail-season .series-wrapper .episode .episode-img {
+  padding-right: 0.5rem;
+}
+.detail-season .series-wrapper .episode .episode-text {
+  flex-direction: column;
+}
+.detail-season .series-wrapper .episode .episode-title {
+  padding: 0.5rem 0 0.5rem 0;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 *, *:after, *:before {
