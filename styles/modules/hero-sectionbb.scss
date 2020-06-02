@@ -11,6 +11,17 @@ $mobileBreakpoint: 320px;
     .hero-section {
     width: 65vw;
     text-align: left;
+    .hero-title{
+        display: none;
+        @media (max-width: $mobileBreakpoint){
+            font-size: 2rem;
+            font-weight: bold;
+            line-height: 1.5rem;
+            padding-top: 3.5rem;
+            margin-left: 1.5rem;
+            display: block;
+        }
+        }
         .logo-bb {
             display: inline-block;
             margin-top: 5rem;
@@ -24,20 +35,23 @@ $mobileBreakpoint: 320px;
          }
          .hero-details{
              margin-left: 2rem;
-             margin-top: -2.5rem;
+             margin-top: 2.5rem;
              font-weight: bold;
              @media (max-width: $mobileBreakpoint) {
-                display: block;
                 font-size: 0.8rem;
                 font-weight: bold;
+                margin-top: 0.5rem;
+                margin-bottom: 0.5rem;
                 margin-left: 1.5rem;
             }
              .percentage{
                 color: forestgreen;
                 margin-right: 0.5rem;
-                @media ($mobileBreakpoint){
+
+                @media (max-width: $mobileBreakpoint){
                     display: none;
-                }  
+                }
+                
              }
              .year{
                 margin-right: 0.5rem; 
@@ -88,7 +102,6 @@ $mobileBreakpoint: 320px;
                 justify-content: center;
         
             @media (max-width:$mobileBreakpoint){
-                background-color: #ED0A1D;
                 margin-left: 1rem;
                 margin-top: 0.5rem;
                 margin-bottom: 0.5rem;
@@ -105,8 +118,9 @@ $mobileBreakpoint: 320px;
         position: relative;
         top: 0;
         margin-right: 0.3rem;
-        @media ($mobileBreakpoint){
-            display: none;
+        
+        @media (max-width: $mobileBreakpoint){
+        display: none;
         }
         }
         .thumbs-down{
@@ -114,9 +128,9 @@ $mobileBreakpoint: 320px;
         position: relative;
         transform: rotate(-180deg);
         top: 0; 
-        @media ($mobileBreakpoint){
+        @media (max-width: $mobileBreakpoint){
             display: none;
-        }   
+            } 
         }
     .hero-description{
             width: 41rem;
@@ -124,7 +138,7 @@ $mobileBreakpoint: 320px;
             margin-left: 2rem;
             font-size: 2.1rem;
             line-height: 2.7rem;
-            @media ($mobileBreakpoint){
+            @media (max-width: $mobileBreakpoint){
                 display: none;
             }  
         }

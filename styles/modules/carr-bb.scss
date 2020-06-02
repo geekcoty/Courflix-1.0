@@ -1,16 +1,32 @@
-
 .section-title {
 font-weight: bold;
 margin: 2.5rem 0 2.5rem 2rem;
 font-size: 1.5rem;
+
+@media (max-width:$mobileBreakpoint) {
+    margin-leftt: 1rem;
+    
 }
-.series-wrapper{
-display: flex;
-margin-left: 2rem;
-overflow-x: auto;
-scroll-snap-type: x mandatory;
-    .serie{
+}
+.detail-season{
+    .series-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    .episode{
+        display: flex;
         margin-right: 1rem;
-        scroll-snap-align: start;
+        .episode-img{
+            padding-right: 0.5rem;
+        }
+        .episode-text{
+            flex-direction: column; 
+        }
+            .episode-title{
+                padding: 0.5rem 0 0.5rem 0;
+                font-weight: bold;
+                font-size: 1rem;
+            }
+        }
         }
     }
